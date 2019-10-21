@@ -15,7 +15,11 @@ To use a fixed rplidar port, you can use the script file to remap the USB port n
     $ roscd rplidar_ros
     $ ./scripts/create_udev_rules.sh
   
-  /dev/ttyUSBx is remapped to /dev/rplidar
+check the remap using following command: 
+
+    $ ls -l /dev | grep ttyUSB
+
+/dev/ttyUSBx is remapped to /dev/rplidar
  
 ## TurtleBot with RP-LiDAR A1
 
@@ -25,4 +29,10 @@ To start the TurtleBot with RP-LiDAR - on the TB laptop :
     
 To view the robot with LiDAR in rviz :
 
-    $ roslaunch turtlebot_vibot_bringup view_robot_rplidar.launch 
+    $ roslaunch turtlebot_vibot_bringup view_robot_rplidar.launch
+    
+While *turtlebot_vibot_bringup minimal_rplidar.launch* is **active** you can stop and start the LiDAR motor by calling a service :
+
+    $ rosservice call /stop_motor
+    
+    $ rosservice call /start_motor
