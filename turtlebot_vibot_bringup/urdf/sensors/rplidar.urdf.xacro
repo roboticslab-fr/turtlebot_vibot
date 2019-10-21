@@ -14,14 +14,14 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="package://turtlebot_vibot/meshes/sensors/rplidar.dae"/>
+            <mesh filename="package://turtlebot_vibot_bringup/meshes/sensors/rplidar.dae"/>
         </geometry>
       </collision>
   
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="package://turtlebot_vibot/meshes/sensors/rplidar.dae"/>
+            <mesh filename="package://turtlebot_vibot_bringup/meshes/sensors/rplidar.dae"/>
         </geometry>
       </visual>
   
