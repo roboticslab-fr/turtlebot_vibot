@@ -36,3 +36,21 @@ While *turtlebot_vibot_bringup minimal_rplidar.launch* is **active** you can sto
     $ rosservice call /stop_motor
     
     $ rosservice call /start_motor
+    
+## TurtleBot with RP-LiDAR A1 and Kinect
+
+Start the TurtleBot with RP-LiDAR - on the TB laptop :
+
+    $ roslaunch turtlebot_vibot_bringup minimal_rplidar.launch
+    
+Start the Kinect - on the TB laptop :
+
+    $ roslaunch turtlebot_vibot_bringup 3dsensor_rplidar.launch
+
+To view the robot with LiDAR & Kinect in rviz :
+
+    $ roslaunch turtlebot_vibot_bringup view_robot_rplidar_kinect.launch
+    
+- RP Lidar publishes its LaserScan data to /scan topic - represented in RED dots in RVIZ
+- Kinect "Fake LaserScan" publishes its LaserScan data to /kinect_scan topic - represented in BLUE dots in RVIZ
+
