@@ -149,3 +149,6 @@ https://github.com/roboticslab-fr/BSCV5_RobEng2
 - For advanced tuning of TurtleBot navigation settings
 http://kaiyuzheng.me/documents/navguide.pdf
 
+- Excellent Course slides on navigation package
+https://u.cs.biu.ac.il/~yehoshr1/89-685/Fall2015/ROS_Lesson7.pdf
+
