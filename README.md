@@ -1,9 +1,16 @@
 # turtlebot_vibot
 Metapackage to handle our customized TurtleBot2 fleet
 
+Composed of 2 packages :
+
+- *turtlebot_vibot_bringup* - to start the TurtleBot with RPLiDAR and Kinect Sensors
+        
+- *turtlebot_vibot_nav* - to perform navigation tasks : to create a map and navigate
+
 ## RP-LiDAR A1 Installation
 
 Install rp-lidar package by following the instructions provided by the manufacturer :
+
 Slamtec repository for ROS packages : https://github.com/Slamtec/rplidar_ros
 (see references on the repository for more informations on the LiDAR)
 
