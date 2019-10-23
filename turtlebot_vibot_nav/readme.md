@@ -47,7 +47,7 @@ Can be done manually in a command line :
 
         $ export TURTLEBOT_MAP_FILE=/...path.../map.yaml
 
-    example : export TURTLEBOT_MAP_FILE:=`rospack finhttp://kaiyuzheng.me/documents/navguide.pdfd turtlebot_vibot_nav`/maps/my_map.yaml
+    example : export TURTLEBOT_MAP_FILE:=`rospack find turtlebot_vibot_nav`/maps/my_map.yaml
 
 **OR** in the amcl_demo_rplidar.launch file :
 
