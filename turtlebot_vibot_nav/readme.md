@@ -1,7 +1,5 @@
 # TurtleBot Navigation - with RP LiDAR
 
-**!!! Obstacle avoidance needs to be TESTED !!!**
-
 ## SLAM Map Building with TurtleBot
 
 1. On turtlebot laptop
@@ -104,6 +102,8 @@ To perform LiDAR navigation => **turtlebot_vibot_nav/param/costmap_common_params
 - map_type: voxel -> changed to costmap for the RPLiDAR
 
 - max_obstacle_height is set to 1.00 instead of 0.35 inside the obstacle layer because the Lidar height from the ground is greater than the Kinect’s height. Otherwise the obstacle layer will not record any obstacle.
+
+- z_voxels: is set to 10 instead of 2 to enable LiDAR sensor to be within range of local map 
 
 2. On the Workstation, launch rviz with the following command.
 
