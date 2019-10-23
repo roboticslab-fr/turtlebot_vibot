@@ -1,4 +1,4 @@
-max_obstacle_height: 0.60  # assume something like an arm is mounted on top of the robot
+max_obstacle_height: 1.0 #0.60 # assume something like an arm is mounted on top of the robot
 
 # Obstacle Cost Shaping (http://wiki.ros.org/costmap_2d/hydro/inflation)
 robot_radius: 0.20  # distance a circular robot should be clear of the obstacle (kobuki: 0.18)
@@ -9,7 +9,7 @@ map_type: costmap
 
 obstacle_layer:
   enabled:              true
-  max_obstacle_height:  0.6
+  max_obstacle_height:  1.0 #0.6
   origin_z:             0.0
   z_resolution:         0.2
   z_voxels:             2
@@ -21,7 +21,7 @@ obstacle_layer:
   raytrace_range: 3.0
   origin_z: 0.0
   z_resolution: 0.2
-  z_voxels: 2
+  z_voxels: 10 #2
   publish_voxel_map: false
   observation_sources:  scan bump
   scan:
@@ -29,7 +29,7 @@ obstacle_layer:
     topic: scan
     marking: true
     clearing: true
-    min_obstacle_height: 0.25
+    min_obstacle_height: 0.1 #0.25
     # max_obstacle_height: 0.35 -> changed to 1.00 for the RPLiDAR
     max_obstacle_height: 1.00
   bump:
